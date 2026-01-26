@@ -4,19 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon logSystemInfo.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/neerajgautam9548/Backend-Dev.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/neerajgautam9548/Backend-Dev/issues"
-  },
-  "homepage": "https://github.com/neerajgautam9548/Backend-Dev#readme"
+  "type": "commonjs"
 }
