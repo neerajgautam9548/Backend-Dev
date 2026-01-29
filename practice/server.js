@@ -13,6 +13,7 @@ const server = http.createServer((req, res) => {
         if (err) {
             console.error("Error writing log:", err);
         }
+        
     });
 
     switch (pathname) {
