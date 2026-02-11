@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "name": "Ayush",
+    "branch": "AI-ML"
+  },
+  {
+    "id": 2,
+    "name": "Anuj",
+    "branch": "Managment"
+  },
+  {
+    "id": 3,
+    "name": "Priyanshu",
+    "branch": "BCA"
+  },
+  {
+    "id": 4,
+    "name": "Adarsh",
+    "branch": "BCom"
+  }
+]
