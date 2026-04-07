@@ -1,0 +1,57 @@
+Exercise 1: Database Selection
+1. Online banking system → SQL
+Needs ACID properties, strong consistency, transactions
+Example: MySQL, PostgreSQL
+2. Social media platform → NoSQL
+Handles huge unstructured data, scalability
+Example: MongoDB
+3. Real-time chat application → NoSQL
+Requires high speed + scalability + flexible schema
+Example: Firebase, MongoDB
+4. Hospital patient records → SQL
+Needs data integrity, consistency, security
+Structured data
+5. IoT sensor data collection → NoSQL
+High-volume, real-time data
+Flexible schema
+
+Exercise 2: CAP Theorem Analysis
+1. Stock trading platform → CP (Consistency + Partition Tolerance)
+Accuracy is critical (no wrong transactions)
+2. Content delivery network → AP (Availability + Partition Tolerance)
+Always available, slight inconsistency acceptable
+3. Airline booking system → CP
+No double booking → consistency required
+4. Video streaming service → AP
+Availability matters more than perfect consistency
+
+
+Exercise 3: MongoDB Operations (Library System)
+ Insert a new book
+db.books.insert_one({
+  "title": "Python Basics",
+  "author": "John Doe",
+  "available": True
+})
+ Find books by author
+db.books.find({ "author": "John Doe" })
+ Update book availability
+db.books.update_one(
+  { "title": "Python Basics" },
+  { "$set": { "available": False } }
+)
+ Track borrowed books by user
+db.borrowed.insert_one({
+  "user": "Neeraj",
+  "book": "Python Basics",
+  "borrow_date": new Date()
+})
+
+Exercise 4: JSON → BSON Conversion
+
+{
+  orderId: NumberInt(12345),
+  orderDate: ISODate("2024-01-15T00:00:00Z"),
+  totalAmount: NumberDecimal("99.99"),
+  items: ["item1", "item2"]
+}
